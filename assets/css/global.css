@@ -48,6 +48,9 @@
   --primary-dark: #062c6b;
   --primary-dark-b: #0353a4;
   --primary-b: #0078ad;
+  --primary-c: #07c8f9;
+  --primary-d: #c9ecff;
+  --gray: #ededed;
   --white: #ffffff;
   --white-b: #eaeaea;
   --white-c: #f3f2f2;
@@ -145,6 +148,9 @@ main {
 }
 .t-blue {
   color: var(--primary-b);
+}
+.t-primary {
+  color: var(--primary);
 }
 .title {
   text-transform: uppercase;

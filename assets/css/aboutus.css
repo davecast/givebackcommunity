@@ -1,0 +1,241 @@
+/*
+* ABOUT US
+*/
+.story {
+  padding: 4.5rem 0;
+  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.11);
+  z-index: 9;
+  position: relative;
+}
+.story_wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 5rem;
+  border-radius: 4rem;
+  box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
+}
+.story_title {
+  margin: 0 0 2.5rem;
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.story_text {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-style: italic;
+  color: var(--primary-dark);
+  margin: 0 0 2.5rem;
+}
+.story_comment {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--primary-dark);
+}
+.story_comment_last {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--primary-dark);
+}
+
+/*
+* TEAM
+*/
+.teams {
+  padding: 6.5rem 0 4rem;
+  background-color: var(--white-c);
+}
+.team_wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+}
+.team {
+  background-color: var(--primary-c);
+  max-width: 55%;
+  width: 100%;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  margin: 0 0 2.5rem;
+}
+.team-left {
+  padding-left: calc(calc(100% - 980px) / 2);
+  padding-right: 3.75rem;
+  justify-content: flex-end;
+  border-top-right-radius: 310px;
+  border-bottom-right-radius: 310px;
+}
+.team-right {
+  padding-right: calc(calc(100% - 980px) / 2);
+  padding-left: 3.75rem;
+  align-self: flex-end;
+  justify-content: flex-start;
+  border-top-left-radius: 310px;
+  border-bottom-left-radius: 310px;
+}
+.team_body {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.team-left .team_body {
+  padding-left: 20%;
+}
+.team-right .team_body {
+  padding-right: 20%;
+}
+.team_image {
+  position: absolute;
+  width: 70%;
+  bottom: -55px;
+}
+.team-left .team_image {
+  left: -25%;
+}
+.team-right .team_image {
+  right: -32%;
+}
+.team_meta {
+  background-color: var(--gray);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.team-left .team_meta {
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 2rem;
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+}
+.team-right .team_meta {
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 2rem;
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+}
+.team_name {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--primary);
+  text-transform: uppercase;
+}
+.team_position {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--primary-dark);
+}
+
+/*
+* DIRECTORS
+*/
+.directors {
+  padding: 4.5rem 0;
+}
+.directors_wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+}
+.director {
+  background-color: var(--primary);
+  margin: 0 0 2rem;
+  border: 4px solid var(--primary-d);
+  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.11);
+  display: grid;
+  grid-template: 1fr / 190px 1fr;
+  gap: 1rem;
+  padding: 10px 2rem 10px 10px;
+  border-radius: 64px;
+}
+.director_image {
+}
+.director_image img {
+  max-width: 100%;
+}
+.director_meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.director_name {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--white);
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+.director_description {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--white);
+  margin: 0 0 0.5rem;
+  text-align: right;
+}
+.director_position {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--white);
+  text-align: right;
+}
+
+/*
+* ADVISORS
+*/
+.advisors {
+  padding: 2.5rem 0 4.5rem;
+}
+.advisors_wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3rem 5rem;
+  border-radius: 4rem;
+  box-shadow: inset 0px 0px 8px 10px rgba(0, 0, 0, 0.11);
+  background-color: var(--primary-d);
+}
+.advisor {
+  background-color: var(--white);
+  margin: 0 0 2rem;
+  border: 4px solid var(--primary-c);
+  box-shadow: 0px 0px 12px 5px rgba(0, 0, 0, 0.11);
+  padding: 5rem;
+  border-radius: 64px;
+  text-align: center;
+}
+.advisor_name {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--primary);
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+}
+.advisor_position {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--primary);
+}
