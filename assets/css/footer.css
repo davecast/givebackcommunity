@@ -1,0 +1,64 @@
+.footer {
+  background-color: var(--white-b);
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+.footer .logo {
+  z-index: 9;
+  margin: 0;
+  font-size: 0;
+  width: 200px;
+}
+.footer .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+.footer .footer_container {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1rem;
+  color: var(--primary-b);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+.footer .findUs {
+  z-index: 9;
+}
+.footer .findUs h4 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: var(--primary-b);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 0.75rem;
+}
+.footer .networks {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+.footer .network a {
+  display: flex;
+}
+.footer .network img {
+  transition: all 0.15s ease-in-out;
+}
+.footer .network img:hover {
+  transform: scale(1.05);
+}
