@@ -67,6 +67,11 @@
 .impact_four {
   grid-template: 1fr / 106px 60px 1fr;
 }
+.impact_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .impact_icon img {
   width: 80%;
 }

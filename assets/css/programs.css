@@ -1,0 +1,58 @@
+/*
+* PROGRAMS
+*/
+.program_donate {
+  position: fixed;
+  z-index: 99;
+  right: 2rem;
+  bottom: 9.5rem;
+}
+.program {
+}
+.program_header {
+  background-color: var(--white-c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem 2.5rem;
+  box-shadow: inset 3px 7px 12px 5px rgba(0, 0, 0, 0.1);
+}
+.program_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.program_title_icon {
+}
+.program_wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 3.5rem 0;
+}
+.program_body {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  gap: 2rem;
+}
+.program_left {
+}
+.program_right {
+  position: relative;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+.program_subtitle {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--primary-dark);
+}
+.program_text {
+  font-weight: normal;
+  font-style: italic;
+  color: var(--primary-dark);
+}

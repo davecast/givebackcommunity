@@ -47,6 +47,7 @@
   --primary: #009fe5;
   --primary-dark: #062c6b;
   --primary-dark-b: #0353a4;
+  --primary-dark-c: #007eb6;
   --primary-b: #0078ad;
   --primary-c: #07c8f9;
   --primary-d: #c9ecff;
@@ -110,7 +111,7 @@ main {
 .btn-small {
   line-height: 0.875rem;
   font-size: 0.875rem;
-  padding: 0.5rem 2rem;
+  padding: 0.75rem 2rem;
   border-radius: 2rem;
 }
 .btn-medium {
@@ -161,6 +162,10 @@ main {
   font-size: 2.5rem;
   line-height: 2.5rem;
 }
+.title-h4 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
 
 .container {
   max-width: 1280px;
@@ -179,4 +184,20 @@ main {
 }
 .separator-shadow-both {
   box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.05);
+}
+.video_box {
+  width: 100%;
+  padding-top: 56.25%;
+  border: 12px solid #009fe5;
+  border-radius: 45px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
+}
+.video_box iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
