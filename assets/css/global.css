@@ -201,3 +201,22 @@ main {
   top: 0;
   left: 0;
 }
+
+.splide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.splide .splide__arrow {
+  background-color: transparent;
+}
+.splide .splide__arrow.splide__arrow--prev {
+  left: -2rem;
+}
+.splide .splide__arrow.splide__arrow--next {
+  right: -2rem;
+}
+.splide__arrow img {
+  max-width: 32px;
+  max-height: 32px;
+}

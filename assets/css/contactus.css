@@ -1,0 +1,90 @@
+/*
+* CONTACT US
+*/
+
+.contact_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 4rem 0;
+  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.1);
+}
+.contact_info {
+  padding: 4rem 0;
+  background-color: var(--white-c);
+}
+.contact_info_wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr / 0.35fr 0.65fr;
+  box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 80px;
+}
+.contact_info_left {
+  padding: 3rem 2rem;
+  background-color: var(--primary);
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.contact_info_right {
+  padding: 3rem 2rem;
+}
+.contact_info_title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--white);
+  text-transform: uppercase;
+}
+.contact_info_title-primary {
+  color: var(--primary);
+  font-weight: 600;
+}
+.contact_info_title-bold {
+  font-weight: 600;
+}
+.contact_info_action {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contact_info_action img {
+  max-width: 40px;
+  margin: 0 0 1rem;
+}
+.contact_info_action a {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: var(--white);
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.networks_caption {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--white);
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+.networks_list ul {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.networks_list img {
+  max-width: 20px;
+  max-height: 20px;
+}
