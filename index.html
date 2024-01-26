@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/splide.min.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
@@ -79,9 +80,99 @@
       <div class="separator separator-shadow"></div>
       <section class="brands">
         <div class="container">
-          <h2 class="title title-h2 t-blue t-center">
+          <h2 class="title title-h2 t-blue t-center m-b8">
             BRANDS THAT <strong>believe in our purpose</strong>
           </h2>
+          <div class="brands_wrapper">
+            <div
+              id="splideHome"
+              class="splide"
+              aria-label="Splide Basic HTML Example"
+            >
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <img
+                    src="./assets/images/arrow_slide_left.svg"
+                    alt="Arrow left"
+                  />
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <img
+                    src="./assets/images/arrow_slide_right.svg"
+                    alt="Arrow right"
+                  />
+                </button>
+              </div>
+
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_one_chickfila.png"
+                      alt="Chick fil a"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_two_tree_of_life.png"
+                      alt="Tree of life"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_three_bolay.png"
+                      alt="Bolay"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_four_five_guys.png"
+                      alt="Five Guys"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_five_sno.png"
+                      alt="SNO"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_six_west_palm_beach.png"
+                      alt="West Palm Beach"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_seven_minteco.png"
+                      alt="Minteco"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_eight_palm_beach_Atlantic.png"
+                      alt="Palm beach atlantic"
+                    />
+                  </li>
+                  <li class="splide__slide">
+                    <img
+                      class="brand_image"
+                      src="./assets/images/brands_nine_grandview.png"
+                      alt="Grandview"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <div class="separator separator-shadow"></div>
@@ -399,6 +490,7 @@
       </div>
     </footer>
     <script src="./assets/js/masonry.pkgd.min.js"></script>
+    <script src="./assets/js/splide.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

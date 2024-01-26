@@ -39,6 +39,14 @@
   padding: 2.75rem 0;
   background-color: var(--white-b);
 }
+.brands_wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.brand_image {
+  max-height: 150px;
+}
 /*
 * IMPACT
 */
