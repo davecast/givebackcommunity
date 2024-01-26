@@ -60,7 +60,6 @@
 .program_bottom {
   display: flex;
   flex-direction: column;
-  padding-top: 2.5rem;
 }
 .program_slide {
   background-color: var(--primary-d);

@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const testimonialWrapper = document.getElementById("#testimonialWrapper");
+  const testimonialWrapper = document.getElementById("testimonialWrapper");
   const splideHome = document.getElementById("splideHome");
   const splideProgramsOne = document.getElementById("splideProgramsOne");
   const splideProgramsTwo = document.getElementById("splideProgramsTwo");
   const splideProgramsThree = document.getElementById("splideProgramsThree");
   const splideProgramsFour = document.getElementById("splideProgramsFour");
 
-  if (testimonialWrapper) {
+  if (!!testimonialWrapper) {
+    console.log(testimonialWrapper);
     let msnryTestimonial = new Masonry(testimonialWrapper, {
       // options
       itemSelector: ".testimonial_item",
@@ -25,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       autoplay: true,
       focus: 0,
       omitEnd: true,
+      interval: 2000,
     });
 
     splide.mount();
@@ -42,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       omitEnd: true,
       padding: 0,
       gap: 20,
+      interval: 2000,
     });
 
     splideOne.mount();
