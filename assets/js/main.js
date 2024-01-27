@@ -1,3 +1,36 @@
+const OPTIONS_SLIDER_PROGRAMS = {
+  type: "loop",
+  drag: "free",
+  snap: true,
+  perPage: 3,
+  pagination: false,
+  autoplay: true,
+  focus: 0,
+  omitEnd: true,
+  padding: 0,
+  gap: 20,
+  interval: 2000,
+  mediaQuery: "max",
+  breakpoints: {
+    1280: {
+      perPage: 1,
+      pagination: true,
+    },
+  },
+};
+
+const OPTION_SLIDER_HOME = {
+  type: "loop",
+  drag: "free",
+  snap: true,
+  perPage: 3,
+  pagination: false,
+  autoplay: true,
+  focus: 0,
+  omitEnd: true,
+  interval: 2000,
+};
+
 document.addEventListener("DOMContentLoaded", function () {
   const testimonialWrapper = document.getElementById("testimonialWrapper");
   const splideHome = document.getElementById("splideHome");
@@ -5,6 +38,37 @@ document.addEventListener("DOMContentLoaded", function () {
   const splideProgramsTwo = document.getElementById("splideProgramsTwo");
   const splideProgramsThree = document.getElementById("splideProgramsThree");
   const splideProgramsFour = document.getElementById("splideProgramsFour");
+
+  if (!!splideHome) {
+    const splide = new Splide("#splideHome", OPTION_SLIDER_HOME);
+    splide.mount();
+  }
+
+  if (!!splideProgramsOne) {
+    const splideOne = new Splide("#splideProgramsOne", OPTIONS_SLIDER_PROGRAMS);
+    splideOne.mount();
+  }
+
+  if (!!splideProgramsTwo) {
+    const splideTwo = new Splide("#splideProgramsTwo", OPTIONS_SLIDER_PROGRAMS);
+    splideTwo.mount();
+  }
+
+  if (!!splideProgramsThree) {
+    const splideThree = new Splide(
+      "#splideProgramsThree",
+      OPTIONS_SLIDER_PROGRAMS
+    );
+    splideThree.mount();
+  }
+
+  if (!!splideProgramsFour) {
+    const splideFour = new Splide(
+      "#splideProgramsFour",
+      OPTIONS_SLIDER_PROGRAMS
+    );
+    splideFour.mount();
+  }
 
   if (!!testimonialWrapper) {
     let msnryTestimonial = new Masonry(testimonialWrapper, {
@@ -15,90 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  if (!!splideHome) {
-    const splide = new Splide("#splideHome", {
-      type: "loop",
-      drag: "free",
-      snap: true,
-      perPage: 3,
-      pagination: false,
-      autoplay: true,
-      focus: 0,
-      omitEnd: true,
-      interval: 2000,
-    });
-
-    splide.mount();
-  }
-
-  if (!!splideProgramsOne) {
-    const splideOne = new Splide("#splideProgramsOne", {
-      type: "loop",
-      drag: "free",
-      snap: true,
-      perPage: 3,
-      pagination: false,
-      autoplay: true,
-      focus: 0,
-      omitEnd: true,
-      padding: 0,
-      gap: 20,
-      interval: 2000,
-    });
-
-    splideOne.mount();
-  }
-
-  if (!!splideProgramsTwo) {
-    const splideTwo = new Splide("#splideProgramsTwo", {
-      type: "loop",
-      drag: "free",
-      snap: true,
-      perPage: 3,
-      pagination: false,
-      autoplay: true,
-      focus: 0,
-      omitEnd: true,
-      padding: 0,
-      gap: 20,
-    });
-
-    splideTwo.mount();
-  }
-
-  if (!!splideProgramsThree) {
-    const splideThree = new Splide("#splideProgramsThree", {
-      type: "loop",
-      drag: "free",
-      snap: true,
-      perPage: 3,
-      pagination: false,
-      autoplay: true,
-      focus: 0,
-      omitEnd: true,
-      padding: 0,
-      gap: 20,
-    });
-
-    splideThree.mount();
-  }
-
-  if (!!splideProgramsFour) {
-    const splideFour = new Splide("#splideProgramsFour", {
-      type: "loop",
-      drag: "free",
-      snap: true,
-      perPage: 3,
-      pagination: false,
-      autoplay: true,
-      focus: 0,
-      omitEnd: true,
-      padding: 0,
-      gap: 20,
-    });
-
-    splideFour.mount();
-  }
+  //MENU ACTIONS
 
   const menuClose = document.getElementById("menuClose");
   const menuBar = document.getElementById("menuBar");

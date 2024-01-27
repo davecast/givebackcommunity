@@ -96,3 +96,39 @@
   color: var(--primary-dark);
   margin: 0 0 2.5rem;
 }
+
+@media screen and (max-width: 1280px) {
+  .our_approash_title {
+    margin: 0 0 2.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .statement_title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .our_approach_wrapper {
+    padding: 2rem 2.5rem;
+    border-radius: 2.5rem;
+  }
+
+  .our_approash_text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .statement {
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .values {
+    grid-template: 1fr / 1fr;
+    gap: 3rem;
+  }
+}

@@ -131,6 +131,8 @@
   font-style: italic;
   color: var(--primary);
   text-transform: uppercase;
+  position: static;
+  z-index: 99;
 }
 .team_position {
   font-size: 1.5rem;
@@ -238,4 +240,132 @@
   font-weight: normal;
   font-style: italic;
   color: var(--primary);
+}
+
+@media screen and (max-width: 1280px) {
+  .team {
+    max-width: 65%;
+    margin: 0 0 3.5rem;
+  }
+  .team_image {
+    position: absolute;
+    width: 55%;
+    bottom: -53px;
+  }
+  .team-left .team_image {
+    left: 0%;
+  }
+  .team-right .team_image {
+    right: -5%;
+  }
+  .story_title {
+    margin: 0 0 2.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .story_wrapper,
+  .advisors_wrapper {
+    padding: 2rem 2.5rem;
+    border-radius: 2.5rem;
+  }
+  .advisor {
+    padding: 2.5rem;
+    border-radius: 32px;
+  }
+  .advisor_name {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .story_text,
+  .story_comment,
+  .story_comment_last {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media screen and (max-width: 980px) {
+  .directors {
+    padding: 2rem 0;
+  }
+  .director {
+    grid-template: 1fr / 160px 1fr;
+  }
+  .director_name {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .teams {
+    padding: 3.5rem 0 0;
+  }
+  .team {
+    max-width: calc(100% - 2rem);
+    border-radius: 310px;
+    height: auto;
+  }
+  .team_image {
+    width: 30%;
+  }
+  .team-left .team_body,
+  .team-right .team_body {
+    padding: 0;
+    overflow: hidden;
+    border-radius: 200px;
+  }
+  .team-left,
+  .team-right {
+    padding: 1.5rem;
+  }
+  .team-left .team_meta,
+  .team-right .team_meta {
+    border-radius: 200px;
+  }
+  .team-left .team_image,
+  .team-right .team_image {
+    top: 0;
+  }
+  .team-left .team_image {
+    left: 5%;
+  }
+  .team-right .team_image {
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .team_image {
+    width: 35%;
+  }
+  .team-left,
+  .team-right {
+    align-self: center;
+  }
+  .director {
+    grid-template: 1fr / 130px 1fr;
+    padding: 1rem;
+    border-radius: 32px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .team_name {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .team_position {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .team-left,
+  .team-right {
+    padding: 1rem;
+  }
+  .team_image {
+    width: 45%;
+  }
+  .team-left .team_image {
+    left: 0;
+  }
+  .team-right .team_image {
+    right: 0;
+  }
 }
