@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const splideProgramsFour = document.getElementById("splideProgramsFour");
 
   if (!!testimonialWrapper) {
-    console.log(testimonialWrapper);
     let msnryTestimonial = new Masonry(testimonialWrapper, {
       // options
       itemSelector: ".testimonial_item",
@@ -100,4 +99,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     splideFour.mount();
   }
+
+  const menuClose = document.getElementById("menuClose");
+  const menuBar = document.getElementById("menuBar");
+  const menu = document.getElementById("menu");
+  const mobileMenuOverlay = document.getElementById("mobileMenuOverlay");
+
+  const toogleMenu = (e) => {
+    menuClose.classList.toggle("mobile_menu_active");
+    menuBar.classList.toggle("mobile_menu_active");
+    menu.classList.toggle("show_menu");
+    menu.classList.toggle("hidden_menu");
+    mobileMenuOverlay.classList.toggle("mobile_menu_overlay_active");
+  };
+
+  menuClose.addEventListener("click", toogleMenu);
+  menuBar.addEventListener("click", toogleMenu);
+  mobileMenuOverlay.addEventListener("click", toogleMenu);
 });

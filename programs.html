@@ -13,26 +13,27 @@
   </head>
 
   <body>
+    <div id="mobileMenuOverlay" class="mobile_menu_overlay"></div>
     <header class="header">
       <div class="header_container">
         <figure class="logo">
           <img src="./assets/images/logo.png" alt="Giveback Community" />
         </figure>
-        <ul class="menu">
+        <ul id="menu" class="menu">
           <li>
-            <a href="./index.html">Home</a>
+            <a href="./index.html" class="active">Home</a>
           </li>
           <li>
             <a href="./programs.html">Programs</a>
           </li>
           <li>
-            <a href="./about-us.html">About Us</a>
+            <a href="./about-us.html" class="active">About Us</a>
           </li>
           <li>
             <a href="./events.html">Events</a>
           </li>
           <li>
-            <a href="./purpose.html" class="active">Purpose</a>
+            <a href="./purpose.html">Purpose</a>
           </li>
           <li>
             <a href="./blog.html">Blog</a>
@@ -43,6 +44,20 @@
         </ul>
         <div class="action">
           <a href="#" class="btn btn-blue btn-small">Sing Up as a Volunteer</a>
+        </div>
+        <div class="mobile_menu">
+          <img
+            id="menuClose"
+            class="mobile_menu_close"
+            src="./assets/images/close.svg"
+            alt="Close"
+          />
+          <img
+            id="menuBar"
+            class="mobile_menu_bar mobile_menu_active"
+            src="./assets/images/menu.svg"
+            alt="Menu"
+          />
         </div>
       </div>
     </header>

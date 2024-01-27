@@ -51,6 +51,7 @@
   --primary-b: #0078ad;
   --primary-c: #07c8f9;
   --primary-d: #c9ecff;
+  --primary-e: #c6e9fc;
   --gray: #ededed;
   --white: #ffffff;
   --white-b: #eaeaea;
@@ -221,11 +222,23 @@ main {
   max-height: 32px;
 }
 
-main * {
-  display: none;
-}
 @media screen and (max-width: 1280px) {
   main {
     padding: 140px 0 0;
+  }
+  .title-h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .container {
+    width: calc(100% - 2rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    padding: 93px 0 0;
+  }
+  .m-b8 {
+    margin: 0 0 2rem;
   }
 }

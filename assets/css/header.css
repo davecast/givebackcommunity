@@ -46,10 +46,41 @@
 .header .action {
   z-index: 9;
 }
+.mobile_menu,
+.mobile_menu_overlay,
+.mobile_menu_close,
+.mobile_menu_bar {
+  display: none;
+  visibility: hidden;
+}
+
+.mobile_menu_close,
+.mobile_menu_bar {
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.mobile_menu_close:hover,
+.mobile_menu_bar:hover {
+  transform: scale(1.05);
+}
+
+.mobile_menu_close.mobile_menu_active {
+  display: initial;
+  visibility: visible;
+}
+.mobile_menu_bar.mobile_menu_active {
+  display: initial;
+  visibility: visible;
+}
+.mobile_menu {
+  height: 2rem;
+}
 
 @media screen and (max-width: 1280px) {
   .action {
     display: none;
+    visibility: hidden;
   }
   .header .menu {
     position: relative;
@@ -58,5 +89,59 @@
     flex-direction: column;
     height: 140px;
     padding: 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .header_container {
+    flex-direction: row;
+    height: auto;
+  }
+  .mobile_menu,
+  .mobile_menu_overlay {
+    display: flex;
+    visibility: visible;
+  }
+
+  .mobile_menu_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease-in-out;
+  }
+  .mobile_menu_overlay.mobile_menu_overlay_active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header .menu {
+    position: fixed;
+    top: 93px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.9);
+    gap: 1.5rem;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+  }
+  .header .menu a {
+    font-size: 1.75rem;
+    line-height: 1.2rem;
+  }
+
+  .header .menu.show_menu {
+    padding: 2rem 0;
+    height: auto;
+    opacity: 1;
+    box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.11);
   }
 }
