@@ -122,3 +122,49 @@
 .program_slide .program_slide_body .splide .splide__track {
   border-radius: 400px;
 }
+
+@media screen and (max-width: 1280px) {
+  .program_body {
+    grid-template: 1fr / 1fr;
+  }
+  .program_wrapper {
+    padding: 3.5rem 2rem;
+  }
+  .program_slide-right {
+    align-self: center;
+  }
+  .program_slide_body .splide .splide__arrow.splide__arrow--next,
+  .program_slide_body .splide .splide__arrow.splide__arrow--prev {
+    display: none;
+    visibility: hidden;
+  }
+  .program_bottom {
+    align-items: center;
+    justify-content: center;
+  }
+  .program_slide {
+    width: 400px;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 100%;
+    margin: 0 0 6.5rem;
+  }
+  .program_bottom .splide__pagination {
+    bottom: -4rem;
+  }
+  .program_bottom .splide__pagination__page.is-active {
+    background-color: var(--primary-dark);
+  }
+}
+@media screen and (max-width: 768px) {
+  .program_title_icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+  .program_title h3,
+  .program_title h2,
+  .program_subtitle {
+    font-size: 1.5rem;
+  }
+}

@@ -18,7 +18,7 @@
   max-width: 980px;
   margin: 0 auto;
   display: grid;
-  grid-template: 1fr / 0.35fr 0.65fr;
+  grid-template: 1fr / 360px 1fr;
   box-shadow: 3px 7px 12px 5px rgba(0, 0, 0, 0.1);
   border-radius: 80px;
 }
@@ -87,4 +87,19 @@
 .networks_list img {
   max-width: 20px;
   max-height: 20px;
+}
+
+@media screen and (max-width: 980px) {
+  .contact_info_wrapper {
+    grid-template: 1fr / 1fr;
+    gap: 2rem;
+    box-shadow: none;
+  }
+  .contact_info_left {
+    border-radius: 2.5rem;
+  }
+  .contact_info_right {
+    border-radius: 2.5rem;
+    box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.1);
+  }
 }

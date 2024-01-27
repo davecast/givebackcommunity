@@ -259,3 +259,161 @@
   font-weight: bold;
   font-style: italic;
 }
+
+.banner_home_image-top-mobile {
+  display: none;
+  visibility: hidden;
+}
+@media screen and (max-width: 1280px) {
+  .banner_home {
+    background-color: var(--primary-e);
+    overflow: hidden;
+  }
+  .banner_home_decoration-left,
+  .banner_home_decoration-right,
+  .banner_home_image-top {
+    display: none;
+    visibility: hidden;
+  }
+  .banner_home_image-top-mobile {
+    display: block;
+    visibility: visible;
+    max-width: 550px;
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+  }
+  .banner_home_image-top-mobile img {
+    max-width: 100%;
+  }
+  .banner_home_image-bottom {
+    max-width: 100%;
+    padding: 15vh 0 0 0;
+  }
+  .banner_home_image-bottom img {
+    max-width: 100%;
+    transform: scale(1.5);
+  }
+  #splideHome .splide__arrows {
+    display: none;
+    visibility: hidden;
+  }
+  .brand_image {
+    width: calc(100% - 1rem);
+    object-fit: contain;
+  }
+  .impacts {
+    gap: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonial_wrapper {
+    max-width: 469px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .video_explanation_wrapper {
+    grid-template: 1fr/1fr;
+    place-items: center;
+    margin: 0 0 6rem;
+  }
+  .video_explanation_left br {
+    display: none;
+  }
+  .video_explanation_left {
+    justify-content: center;
+    text-align: center;
+  }
+  .video_explanation_right {
+    max-width: calc(100% - 10rem);
+    width: 100%;
+  }
+  .video_verse {
+    max-width: calc(100% - 10rem);
+    width: 100%;
+    position: static;
+    border-radius: 2rem;
+  }
+  .testimonial,
+  .video_explanation {
+    padding: 3.75rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner_home_image-bottom img {
+    transform: scale(1.75);
+  }
+  .ourImpact {
+    padding: 2.75rem 0 0;
+  }
+  .impacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .impact {
+    max-width: 350px;
+    width: 100%;
+  }
+  .problems {
+    grid-template: 1fr / 1fr;
+    gap: 2rem;
+    place-items: center;
+  }
+  .problem {
+    gap: 1rem;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 24px;
+    display: grid;
+    grid-template: 1fr / 80px 110px 1fr;
+  }
+  .problem_number {
+    margin: 0;
+    text-align: left;
+  }
+  .problem_description {
+    text-align: left;
+  }
+  .problem_image {
+    width: 80px;
+    height: 80px;
+  }
+  .problems_deal {
+    padding: 5rem 0 4rem;
+  }
+  .testimonial_item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .video_explanation_right,
+  .video_verse {
+    max-width: 100%;
+  }
+  .video_right_image {
+    left: 0px;
+    bottom: 0px;
+    width: 80px;
+  }
+  .video_explanation_wrapper {
+    grid-template: 1fr/1fr;
+    place-items: center;
+    margin: 0 0 3rem;
+  }
+  .banner_home_image-bottom img {
+    transform: scale(1.6);
+  }
+  .banner_home_action {
+    margin: 0;
+  }
+  .banner_home_image-bottom {
+    padding: 12vh 0 0 0;
+  }
+}

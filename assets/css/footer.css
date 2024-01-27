@@ -62,3 +62,22 @@
 .footer .network img:hover {
   transform: scale(1.05);
 }
+
+@media screen and (max-width: 1280px) {
+  .footer .footer_container {
+    height: auto;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 2.5rem 0;
+  }
+  .footer .findUs {
+    order: 2;
+  }
+  .footer .copy {
+    position: relative;
+    order: 3;
+  }
+  .footer .logo {
+    order: 1;
+  }
+}
