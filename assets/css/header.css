@@ -46,3 +46,17 @@
 .header .action {
   z-index: 9;
 }
+
+@media screen and (max-width: 1280px) {
+  .action {
+    display: none;
+  }
+  .header .menu {
+    position: relative;
+  }
+  .header .header_container {
+    flex-direction: column;
+    height: 140px;
+    padding: 1.5rem 0;
+  }
+}
